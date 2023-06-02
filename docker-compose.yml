@@ -6,8 +6,14 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
+    volumes:
+      - ./definitions.json:/etc/rabbitmq/definitions.json
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
     networks:
       - rabbitmq_network
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=password_123
 
 networks:
   rabbitmq_network:
