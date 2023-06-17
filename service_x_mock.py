@@ -2,7 +2,7 @@ import pika
 import json
 
 user = 'admin'
-password = 'password_123'
+password = 'password@vascobank123'
 
 credentials = pika.PlainCredentials(user, password)
 parameters = pika.ConnectionParameters('localhost', 5672, '/', credentials)

@@ -13,7 +13,7 @@ services:
       - rabbitmq_network
     environment:
       - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=password_123
+      - RABBITMQ_DEFAULT_PASS=password@vascobank123
 
 networks:
   rabbitmq_network:
